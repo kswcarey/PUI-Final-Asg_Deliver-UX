@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--This style sheet is fucking up my own styles-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- jQuery library for Bootstrap-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!--link to my Javascript doc-->
+        <script src="myscript.js"></script>
+        
+        <!--link to my CSS doc-->
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+    
+    <body>
+        <!--Top nav and filters-->
+        <div class="row">
+            <!--Welcome text-->
+            <div class="col-sm-4" id="welcome-text">
+                <div class="row">
+                    <h1>Welcome to Deliver UX!</h1>
+                </div>
+                <div class="row">
+                    <p>
+                    Are you stalled in a design project with no clue what to do next? Deliver UX is here to give you inpiration and set you in motion! Apply filters to get results that fit your project or simply browse your options. Happy creating!
+                    </p>
+                </div>    
+            </div>
+            <!--Filters section-->
+            <div id="filter-bar" class="col-sm-8">
+                <!--Current knowledge section-->
+                <div class="row">
+                    <h2>What do you know about your project so far?</h2>
+                    <!--Filter buttons-->
+                    <div class="row">
+                        <button class="filter">User interview or survey</button>
+                        <button class="filter">User behaviors</button> 
+                        <button class="filter">Current pain points</button>
+                        <button class="filter">Competitive analysis</button>
+                        <button class="filter">Scope of project</button>
+                        <button class="filter">User feedback</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Collaborators section-->
+                    <div class="col-md-6">
+                        <h2>Who will be involved in the next step?</h2>
+                        <input id="user" type="checkbox" value="user-check"/>
+                        <label for="user-check">User</label>
+                        <br />
+                        <input id="client" type="checkbox" value="client-check"/>
+                        <label for="client-check">Client</label>
+                        <br />
+                        <input id="internal" type="checkbox" value="internal-check"/>
+                        <label for="internal-check">Internal / Design team</label>
+                        <br />
+                        <input id="dev" type="checkbox" value="dev-check"/>
+                        <label for="dev-check">Developer(s)</label>
+                    </div>
+                    <div class="col-md-6">
+                        <!--Count-->
+                        <div class="row" id="count-div">
+                            <h1 id="count">##</h1>
+                        </div>
+                        <!--Reset button-->
+                        <button class="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Content cards-->
+        <!--//Write a template for a card. 
+            Give each element a class so they can all be styled at once
+            
+            Look into Handlebars first
+            
+            Have a js function to create the card.
+            Look back at WeDo for inspiration//-->
+        <div class="card" id="personas" value="interviews" "behaviors" "client" "internal" "dev">personas</div>
+        
+        <div class="card" id="journey-map" value="interviews" "behaviors" "client" "internal">journey map</div>
+        
+        <div class="card" id="visions" value="interviews" "behaviors" "internal">visions</div>
+        
+        <div class="card" id="scenarios" value="interviews" "behaviors" "internal">scenarios</div>
+        
+        <div class="card" id="storyboards" value="interviews" "behaviors" "internal">storyboards</div>
+        
+        <div class="card" id="sequence-flow" value="behaviors" "painpoints" "internal">sequence flow model</div>
+        
+        <div class="card" id="visions" value="interviews" "behaviors" "internal">visions</div>
+        
+        <div class="card" id="user-flow" value="interviews" "behaviors" "internal" "dev">user flow</div>
+        
+        <div class="card" id="lo-fi" value="paintpoints" "scope" "internal" "user">lo-fi prototype</div>
+        
+        <div class="card" id="wireframe" value="scope" "internal" "dev" "client" "user">wireframe</div>
+        
+        <div class="card" id="hi-fi" value="feedback" "scope" "analysis" "internal" "dev" "client" "user">hi-fi prototype</div>
+        
+        <div class="card" id="iterate" value="interviews" "behaviors" "paintpoints" "feedback" "scope" "analysis" "internal" "dev" "client" "user">iterate foo</div>
+    
+    </body>
+</html>

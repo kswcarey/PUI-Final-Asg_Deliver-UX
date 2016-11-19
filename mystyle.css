@@ -1,0 +1,67 @@
+/*H1 style*/
+h1 {
+    font-family: "Optima";
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+}
+
+h2 {
+    font-family: "Avenir";
+    font-size: 14px;
+    font-weight: 400
+    text-align: left
+}
+
+/*p style*/
+p {
+    font-family: "Avenir";
+    font-size: 14px; 
+    text-align: left
+}
+
+#welcome-text {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#filter-bar {
+    /*figure out how to left align the subtitles and buttons*/
+}
+
+/*current knowledge button style*/
+button.filter {
+    height: 100px;
+    width: 100px;
+    font-family: "Avenir";
+    font-size: 14px; 
+    text-align: center;
+    font-weight:100;
+    vertical-align: top;
+}
+
+/*checkbox styles*/
+label {
+    font-family: "Avenir";
+    font-size: 14px; 
+    text-align: left;
+    font-weight:100;
+}
+
+/*reset button*/
+button.reset {
+    height: 50px;
+    width: 100px;
+    font-family: "Avenir";
+    font-size: 14px; 
+    text-align: center;
+    font-weight:100;
+}
+
+div.card {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+    padding: 10px;
+    border: 2px solid lightgray;
+}
