@@ -33,33 +33,33 @@
             </div>
             <!--Filters section-->
             <div id="filter-bar" class="col-sm-8">
-                <!--Current knowledge section-->
+                <!--BUTTONS Current knowledge section-->
                 <div class="row">
                     <h2>What do you know about your project so far?</h2>
-                    <!--Filter buttons-->
+                    Filter buttons
                     <div class="row">
-                        <button class="filter">User interview or survey</button>
-                        <button class="filter">User behaviors</button> 
-                        <button class="filter">Current pain points</button>
-                        <button class="filter">Competitive analysis</button>
-                        <button class="filter">Scope of project</button>
-                        <button class="filter">User feedback</button>
+                        <button class="filter" onclick="filterCard(['personas', 'journey-map','scenarios','storyboards','visions','user-flow','iterate'])">User interview or survey</button>
+                        <button class="filter" onclick="filterCard(['personas', 'journey-map','scenarios','storyboards','sequence-flow','visions','user-flow','iterate'])">User behaviors</button> 
+                        <button class="filter" onclick="filterCard(['sequence-flow','lo-fi','iterate'])">Current pain points</button>
+                        <button class="filter" onclick="filterCard(['hi-fi','iterate'])">Competitive analysis</button>
+                        <button class="filter" onclick="filterCard(['lo-fi','wireframes','iterate'])">Scope of project</button>
+                        <button class="filter" onclick="filterCard(['storyboards','lo-fi','hi-fi','iterate'])">User feedback</button>
                     </div>
                 </div>
                 <div class="row">
-                    <!--Collaborators section-->
+                    <!--CHECKBOXES Collaborators section-->
                     <div class="col-md-6">
                         <h2>Who will be involved in the next step?</h2>
-                        <input id="user" type="checkbox" value="user-check"/>
+                        <input id="user" type="checkbox" value="user-check" onchange="checkBox(event,'user')"/>
                         <label for="user-check">User</label>
                         <br />
-                        <input id="client" type="checkbox" value="client-check"/>
+                        <input id="client" type="checkbox" value="client-check" onchange="checkBox(event,'client')"/>
                         <label for="client-check">Client</label>
                         <br />
-                        <input id="internal" type="checkbox" value="internal-check"/>
+                        <input id="internal" type="checkbox" value="internal-check" onchange="checkBox(event,'internal')"/>
                         <label for="internal-check">Internal / Design team</label>
                         <br />
-                        <input id="dev" type="checkbox" value="dev-check"/>
+                        <input id="dev" type="checkbox" value="dev-check" onchange="checkBox(event,'dev')"/>
                         <label for="dev-check">Developer(s)</label>
                     </div>
                     <div class="col-md-6">
@@ -82,29 +82,27 @@
             
             Have a js function to create the card.
             Look back at WeDo for inspiration//-->
-        <div class="card" id="personas" value="interviews" "behaviors" "client" "internal" "dev">personas</div>
+        <div class="card client internal dev" id="personas" value="interviews behaviors">personas</div>
         
-        <div class="card" id="journey-map" value="interviews" "behaviors" "client" "internal">journey map</div>
+        <div class="card client internal" id="journey-map" value="interviews behaviors">journey map</div>
         
-        <div class="card" id="visions" value="interviews" "behaviors" "internal">visions</div>
+        <div class="card internal" id="scenarios" value="interviews behaviors">scenarios</div>
         
-        <div class="card" id="scenarios" value="interviews" "behaviors" "internal">scenarios</div>
+        <div class="card internal user" id="storyboards" value="interviews behaviors">storyboards</div>
         
-        <div class="card" id="storyboards" value="interviews" "behaviors" "internal">storyboards</div>
+        <div class="card internal" id="sequence-flow" value="behaviors painpoints">sequence flow model</div>
         
-        <div class="card" id="sequence-flow" value="behaviors" "painpoints" "internal">sequence flow model</div>
+        <div class="card internal" id="visions" value="interviews behaviors">visions</div>
         
-        <div class="card" id="visions" value="interviews" "behaviors" "internal">visions</div>
+        <div class="card internal dev" id="user-flow" value="interviews behaviors">user flow</div>
         
-        <div class="card" id="user-flow" value="interviews" "behaviors" "internal" "dev">user flow</div>
+        <div class="card internal user" id="lo-fi" value="paintpoints scope">lo-fi prototype</div>
         
-        <div class="card" id="lo-fi" value="paintpoints" "scope" "internal" "user">lo-fi prototype</div>
+        <div class="card internal dev client user" id="wireframe" value="scope">wireframe</div>
         
-        <div class="card" id="wireframe" value="scope" "internal" "dev" "client" "user">wireframe</div>
+        <div class="card internal dev client user" id="hi-fi" value="feedback scope analysis">hi-fi prototype</div>
         
-        <div class="card" id="hi-fi" value="feedback" "scope" "analysis" "internal" "dev" "client" "user">hi-fi prototype</div>
-        
-        <div class="card" id="iterate" value="interviews" "behaviors" "paintpoints" "feedback" "scope" "analysis" "internal" "dev" "client" "user">iterate foo</div>
+        <div class="card internal dev client user" id="iterate" value="interviews behaviors paintpoints feedback scope analysis">iterate foo</div>
     
     </body>
 </html>
