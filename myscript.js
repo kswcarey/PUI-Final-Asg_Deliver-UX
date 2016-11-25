@@ -4,6 +4,9 @@ var buttonState = [];
 //array of which check boxes are checked
 var checkState = [];
 
+//animation duration universal variable
+var animationDuration = 500;
+
 //FUNCTION change buttonState based on value passed
 var filterCard = function(newButtonState){
 //    //if user chooses filter, pass in value to filter for
@@ -42,14 +45,14 @@ var checkBox = function(event,checkBoxId){
 var updateView = function(){
     //when button state is empty, show all cards
     if (buttonState.length===0){
-        $("div.card").show();
+        $("div.card").finish().slideDown(animationDuration);
     }
     //filter out the cards not applicable to the selected phase/button
     else{
-        $("div.card").hide();
+        $("div.card").finish().hide();
         for(var i=0; i<buttonState.length; i++){
             var cardId=buttonState[i];
-            $('#' + cardId).show();
+            $('#' + cardId).finish().slideDown(animationDuration);
         }
     }
     
@@ -59,9 +62,15 @@ var updateView = function(){
             return "." + name;
         }).join('');
 
-        $(".card").not(checkStateSelector).hide();
+        $("div.card").not(checkStateSelector).finish().slideUp(animationDuration);
     }
     
+    // visible count
+    setTimeout(function(){
+        var count = $("div.card").filter(':visible').length;
+        // set text 
+        $("#count").text(count);
+    },animationDuration+10);
 };
 
 //FUNCTION-helper remove card
@@ -70,9 +79,12 @@ var updateView = function(){
 
 //FUNCTION resetting results
     //change buttonState to empty array
+    buttonState = [];
     //select each checkbox and make sure it is unchecked
     $("#user").attr('checked',false);
     //same as above with trigger change
     ////$("#user").attr('checked',false).trigger('change');
 
-//EXTRA adding banner to return to site above any linked external page?
+$(document).ready(function(){
+   updateView(); 
+});
