@@ -19,7 +19,7 @@
     
     <body>
         <!--Top nav and filters-->
-        <div class="row">
+        <div class="row" id="top">
             <!--Welcome text-->
             <div class="col-sm-4" id="welcome-text">
                 <div class="row">
@@ -67,7 +67,7 @@
                             <h1 id="count"></h1>
                         </div>
                         <!--Reset button-->
-                        <button class="reset">Reset</button>
+                        <button class="reset" onclick="reset()">Reset</button>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,29 @@
             
             Have a js function to create the card.
             Look back at WeDo for inspiration//-->
-        <div class="card client internal dev" id="personas" value="interviews behaviors">personas</div>
+        
+        <div class="card client internal dev row" id="personas" value="interviews behaviors">
+            <div>
+                <div class="description col-md-9">
+                    <h1>Personas</h1>
+                    <p>Personas are a great way to synthesize your research findings after gathering detailed information about your users through observation, interviews, and surveys. Personas are archetypes of user behaviors that help generate empathy for your users within your product team.</p>
+                </div>
+            </div>
+            <div class="pictures col-md-9">
+                <h2>Examples</h2>
+                <a class="card-image persona-image-1" href="https://s-media-cache-ak0.pinimg.com/564x/06/c5/71/06c5712a48716c82af295350680a06c1.jpg" target="_blank"></a>
+                <a class="card-image persona-image-2" href="https://s-media-cache-ak0.pinimg.com/564x/3d/6a/68/3d6a68a885133fcbf308e33364dd1dcf.jpg" target="_blank"></a>
+                <a class="card-image persona-image-3" href="https://s-media-cache-ak0.pinimg.com/564x/41/fc/1c/41fc1caffbb5dc1f281f628f5ec02460.jpg" target="_blank"></a>
+            </div>
+            <div class="col-md-3 next-steps">
+                <h2>Great step towards:</h2>
+                <ul>
+                    <li>Synthesizing user research</li>
+                    <li>Identifying pain points</li>
+                    <li>Generating empathy</li>
+                </ul>
+            </div>
+        </div>
         
         <div class="card client internal" id="journey-map" value="interviews behaviors">journey map</div>
         

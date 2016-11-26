@@ -78,12 +78,16 @@ var updateView = function(){
     //change status to hidden
 
 //FUNCTION resetting results
+var reset = function(){
     //change buttonState to empty array
     buttonState = [];
     //select each checkbox and make sure it is unchecked
-    $("#user").attr('checked',false);
-    //same as above with trigger change
-    ////$("#user").attr('checked',false).trigger('change');
+    $("#user").attr('checked',false).trigger('change');
+    $("#client").attr('checked',false).trigger('change');
+    $("#internal").attr('checked',false).trigger('change');
+    $("#dev").attr('checked',false).trigger('change');
+    updateView();
+}
 
 $(document).ready(function(){
    updateView(); 
