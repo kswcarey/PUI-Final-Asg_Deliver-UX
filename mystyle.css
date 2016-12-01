@@ -9,7 +9,7 @@ h1 {
 h2 {
     font-family: "Avenir";
     font-size: 14px;
-    font-weight: 400
+    font-weight: bolder;
     text-align: left
 }
 
@@ -71,7 +71,17 @@ button.reset {
     border-style: outset;
 }
 
+#by-line {
+    float:right;
+    padding: 10px;
+}
+
+#iterate {
+    margin-bottom: 50px;
+}
+
 div.card {
+    height: 411px; /*HACK for card not expanding with contents. FIX for real*/
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 25px;
@@ -91,8 +101,11 @@ div.card {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 15px;
+    margin-right: 15px;
+    box-shadow: 2px 4px 6px gray;
 }
 
+/*----------//PERSONA IMAGES\\----------*/
 .persona-image-1 {
     background-image:url("https://s-media-cache-ak0.pinimg.com/564x/06/c5/71/06c5712a48716c82af295350680a06c1.jpg");
 }
@@ -103,4 +116,121 @@ div.card {
 
 .persona-image-3 {
     background-image:url("https://s-media-cache-ak0.pinimg.com/564x/41/fc/1c/41fc1caffbb5dc1f281f628f5ec02460.jpg");
+}
+
+/*----------//JOURNEY MAP IMAGES\\----------*/
+.journey-image-1 {
+    background-image:url("https://d13yacurqjgara.cloudfront.net/users/220120/screenshots/1034908/jack_dribbble_bam_1x.jpg");
+}
+
+.journey-image-2 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/564x/f8/b5/d1/f8b5d13afaa65dc24f851ff825402da3.jpg");
+}
+
+.journey-image-3 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/564x/9f/a5/04/9fa504f2d0d63156d430fc73a74a0ce9.jpg");
+}
+
+/*----------//SCENARIOS IMAGES\\----------*/
+.scenario-image-1 {
+    background-image:url("https://www.smashingmagazine.com/wp-content/uploads/2013/12/brainwriting-6-opt.png");
+}
+
+.scenario-image-2 {
+    background-image:url("https://uxthink.files.wordpress.com/2010/11/screen-shot-2010-11-16-at-10-07-05-am.png");
+}
+
+.scenario-image-3 {
+    background-image:url("https://www.newfangled.com/wp-content/uploads/2014/08/stuffcontentmgrfiles2ab66c232f187a7e09b09f4ecbb26e0edmisc2014_02_18_users71.png");
+}
+
+/*----------//STORYBOARDS IMAGES\\----------*/   
+.story-image-1 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/564x/d0/61/4b/d0614b65da5237bf61d60d1c2909c0ed.jpg");
+}
+
+.story-image-2 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/564x/eb/d4/6c/ebd46cfc79129ebe0089d8db0c59669c.jpg");
+}
+
+.story-image-3 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/564x/1f/d1/61/1fd1618ae36b4015848f952f42d17c22.jpg");
+}
+
+/*----------//SEQUENCE FLOW MODEL IMAGES\\----------*/   
+.sequence-image-1 {
+    background-image:url("http://theteacher.info/websites/ocr_alevel/WebPages/F453_Advanced/Diagrams/SequenceDiagram.GIF");
+}
+
+.sequence-image-2 {
+    background-image:url("https://d1dlalugb0z2hd.cloudfront.net/vpuml/tutorials/soaml-multi-party-service/21-complete-sequence-diagram.png");
+}
+
+.sequence-image-3 {
+    background-image:url("http://www.ibm.com/support/knowledgecenter/pt-br/SSTLXK_7.5.1/com.ibm.wbpm.wle.editor.doc/modeling/image/example_decision_gateway_1.jpg");
+}
+
+/*----------//USER FLOW IMAGES\\----------*/   
+.user-image-1 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/564x/f0/cc/89/f0cc89756bdd487b515e4ef15e835dd9.jpg");
+}
+
+.user-image-2 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/236x/23/fd/0d/23fd0d4325c6e23ccf661f9ff9c705c5.jpg");
+}
+
+.user-image-3 {
+    background-image:url("http://grahamtodman.co.uk/blog/wp-content/uploads/2012/04/TimeOut-travel-app-FLOW03.jpg");
+}
+
+/*----------//WIREFRAME IMAGES\\----------*/   
+.wire-image-1 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/564x/67/ed/70/67ed70a6ae6785bfe56cc33d53772fb5.jpg");
+}
+
+.wire-image-2 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/564x/23/b4/dd/23b4dd6c4162d5bbaad48a9fe8855d1b.jpg");
+}
+
+.wire-image-3 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/564x/bc/e2/95/bce295fa48708026a7a9c241b52ea693.jpg");
+}
+
+/*----------//LO-FI IMAGES\\----------*/   
+.lofi-image-1 {
+    background-image:url("https://s-media-cache-ak0.pinimg.com/564x/af/2e/4e/af2e4e2856886b5b6f4bf5c30562c2a5.jpg");
+}
+
+.lofi-image-2 {
+    background-image:url("https://i.ytimg.com/vi/j2Q983tjXlk/hqdefault.jpg");
+}
+
+.lofi-image-3 {
+    background-image:url("http://blog.htc.ca/wp-content/uploads/2016/02/user_experience_design_prototype.png");
+}
+
+/*----------//HI-FI IMAGES\\----------*/   
+.hifi-image-1 {
+    background-image:url("http://uxmag.com/sites/default/files/article-images/prototype-real-data.png");
+}
+
+.hifi-image-2 {
+    background-image:url("http://gohighbrow.com/wp-content/uploads/2016/05/6.4-Design-workflow-with-Sketch.png");
+}
+
+.hifi-image-3 {
+    background-image:url("https://static1.squarespace.com/static/571593b3b6aa60770018658e/t/5748ab1b86db431f0937905d/1464380204078/");
+}
+
+/*----------//ITERATE IMAGES\\----------*/   
+.iterate-image-1 {
+    background-image:url("https://designmodo.com/wp-content/uploads/2012/08/iteration2.jpg");
+}
+
+.iterate-image-2 {
+    background-image:url("https://public-media.interaction-design.org/images/uploads/140cc499019f2f55381a61f15e7d820b.png");
+}
+
+.iterate-image-3 {
+    background-image:url("https://media.nngroup.com/media/editor/2012/10/30/iterative_design_improvements.gif");
 }

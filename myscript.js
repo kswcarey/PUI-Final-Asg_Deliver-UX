@@ -9,21 +9,6 @@ var animationDuration = 500;
 
 //FUNCTION change buttonState based on value passed
 var filterCard = function(newButtonState){
-//    //if user chooses filter, pass in value to filter for
-//    var filter = value;
-//    //put all cards into an array
-//    var cards = document.getElementsByClassName("card");
-//    var arr = jQuery.makeArray(cards);
-//    console.log("made cards into array!");
-//    //loop thru all cards
-//    for (i = 0; i < arr.length; i++){
-//        //if it has a value that matches the filter, change status to visible
-//        if (arr[i].value == filter){
-//            arr[i].style.borderColor="red";
-//        }
-//        //if none of values match the filter, change status to hidden 
-//    }  
-
     buttonState=newButtonState;
     updateView();
 };
@@ -55,7 +40,6 @@ var updateView = function(){
             $('#' + cardId).finish().slideDown(animationDuration);
         }
     }
-    
     //filtering by checkboxes
     if (checkState.length>0){
         var checkStateSelector = checkState.map(function(name){
@@ -64,7 +48,6 @@ var updateView = function(){
 
         $("div.card").not(checkStateSelector).finish().slideUp(animationDuration);
     }
-    
     // visible count
     setTimeout(function(){
         var count = $("div.card").filter(':visible').length;
@@ -72,10 +55,6 @@ var updateView = function(){
         $("#count").text(count);
     },animationDuration+10);
 };
-
-//FUNCTION-helper remove card
-    //animate card minimizing
-    //change status to hidden
 
 //FUNCTION resetting results
 var reset = function(){
@@ -89,6 +68,8 @@ var reset = function(){
     updateView();
 }
 
+
+//Make sure counter is set on page load
 $(document).ready(function(){
    updateView(); 
 });

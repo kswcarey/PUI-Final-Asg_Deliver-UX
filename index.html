@@ -74,21 +74,13 @@
         </div>
         
         <!--Content cards-->
-        <!--//Write a template for a card. 
-            Give each element a class so they can all be styled at once
-            
-            Look into Handlebars first
-            
-            Have a js function to create the card.
-            Look back at WeDo for inspiration//-->
         
+        <!--//////////PERSONA CARD\\\\\\\\\\-->
         <div class="card client internal dev row" id="personas" value="interviews behaviors">
-            <div>
-                <div class="description col-md-9">
-                    <h1>Personas</h1>
-                    <p>Personas are a great way to synthesize your research findings after gathering detailed information about your users through observation, interviews, and surveys. Personas are archetypes of user behaviors that help generate empathy for your users within your product team.</p>
-                </div>
-            </div>
+            <div class="description col-md-9">
+                <h1>Personas</h1>
+                <p>Personas are a great way to synthesize your research findings after gathering detailed information about your users through observation, interviews, and surveys. Personas are archetypes of user behaviors that help generate empathy for your users within your product team.</p>
+             </div>
             <div class="pictures col-md-9">
                 <h2>Examples</h2>
                 <a class="card-image persona-image-1" href="https://s-media-cache-ak0.pinimg.com/564x/06/c5/71/06c5712a48716c82af295350680a06c1.jpg" target="_blank"></a>
@@ -105,25 +97,201 @@
             </div>
         </div>
         
-        <div class="card client internal" id="journey-map" value="interviews behaviors">journey map</div>
+        <!--//////////JOURNEY MAP CARD\\\\\\\\\\-->
+        <div class="card client internal" id="journey-map" value="interviews behaviors">
+            <div class="description col-md-9">
+                <h1>Journey Map</h1>
+                <p>Journey maps are a visual representation of the physical, mental, and emotional process your user goes through when using your product. Create one journey map of the current state and another of the desired future state. From there, you can imagine how your product would fill in the gaps.</p>
+             </div>
+            <div class="pictures col-md-9">
+                <h2>Examples</h2>
+                <a class="card-image journey-image-1" href="https://d13yacurqjgara.cloudfront.net/users/220120/screenshots/1034908/jack_dribbble_bam_1x.jpg" target="_blank"></a>
+                <a class="card-image journey-image-2" href="https://s-media-cache-ak0.pinimg.com/564x/f8/b5/d1/f8b5d13afaa65dc24f851ff825402da3.jpg" target="_blank"></a>
+                <a class="card-image journey-image-3" href="https://s-media-cache-ak0.pinimg.com/564x/9f/a5/04/9fa504f2d0d63156d430fc73a74a0ce9.jpg" target="_blank"></a>
+            </div>
+            <div class="col-md-3 next-steps">
+                <h2>Great step towards:</h2>
+                <ul>
+                    <li>Synthesizing user research</li>
+                    <li>Identifying pain points</li>
+                    <li>Generating empathy</li>
+                </ul>
+            </div>
+        </div>
         
-        <div class="card internal" id="scenarios" value="interviews behaviors">scenarios</div>
+        <!--//////////SCENARIOS CARD\\\\\\\\\\-->
+        <div class="card internal" id="scenarios" value="interviews behaviors">
+            <div class="description col-md-9">
+                <h1>Scenarios</h1>
+                <p>Scenarios are short, written narratives of the situation, solution, and resolution with your user at the center. Once your team has digested the research, work together to imagine a variety of solutions for your user’s main poin points. Use this as an exercise to explore as many different solutions as your team can produce.</p>
+             </div>
+            <div class="pictures col-md-9">
+                <h2>Articles</h2>
+                <a class="card-image scenario-image-1" href="https://www.usability.gov/how-to-and-tools/methods/scenarios.html" target="_blank"></a>
+                <a class="card-image scenario-image-2" href="https://uxthink.wordpress.com/2010/11/30/using_scenarios/" target="_blank"></a>
+                <a class="card-image scenario-image-3" href="http://www.keytostudy.com/creativity-idea-generation/" target="_blank"></a>
+            </div>
+            <div class="col-md-3 next-steps">
+                <h2>Great step towards:</h2>
+                <ul>
+                    <li>Generating ideas</li>
+                </ul>
+            </div>
+        </div>
         
-        <div class="card internal user" id="storyboards" value="interviews behaviors">storyboards</div>
+        <!--//////////STORYBOARDS CARD\\\\\\\\\\-->
+        <div class="card internal user" id="storyboards" value="interviews behaviors">
+            <div class="description col-md-9">
+                <h1>Storyboards</h1>
+                <p>Storyboards give life to your solution. Set up the problem, solution, and resolution for your user through short narratives and simple drawings. Storyboards can be used with your team to better understand the user’s context. You can also show them to users to get initial feedback on solutions before creating detailed designs.</p>
+             </div>
+            <div class="pictures col-md-9">
+                <h2>Examples</h2>
+                <a class="card-image story-image-1" href="https://s-media-cache-ak0.pinimg.com/564x/d0/61/4b/d0614b65da5237bf61d60d1c2909c0ed.jpg" target="_blank"></a>
+                <a class="card-image story-image-2" href="https://s-media-cache-ak0.pinimg.com/564x/eb/d4/6c/ebd46cfc79129ebe0089d8db0c59669c.jpg" target="_blank"></a>
+                <a class="card-image story-image-3" href="https://s-media-cache-ak0.pinimg.com/564x/1f/d1/61/1fd1618ae36b4015848f952f42d17c22.jpg" target="_blank"></a>
+            </div>
+            <div class="col-md-3 next-steps">
+                <h2>Great step towards:</h2>
+                <ul>
+                    <li>Scoping project</li>
+                    <li>User feedback</li>
+                    <li>Generating ideas</li>
+                </ul>
+            </div>
+        </div>
         
-        <div class="card internal" id="sequence-flow" value="behaviors painpoints">sequence flow model</div>
+        <!--//////////SEQUENCE FLOW CARD\\\\\\\\\\-->
+        <div class="card internal" id="sequence-flow" value="behaviors painpoints">
+            <div class="description col-md-9">
+                <h1>Sequence Flow Model</h1>
+                <p>Sequence flow models visualize the sequence of events from the point of view of one user, based on your research of user behavior. The model outlines who your user interacts with, how long actions take, and the flow of information and artifacts. By visualizing these steps, you can find the holes that your solution could fill.</p>
+             </div>
+            <div class="pictures col-md-9">
+                <h2>Examples</h2>
+                <a class="card-image sequence-image-1" href="http://theteacher.info/websites/ocr_alevel/WebPages/F453_Advanced/Diagrams/SequenceDiagram.GIF" target="_blank"></a>
+                <a class="card-image sequence-image-2" href="https://d1dlalugb0z2hd.cloudfront.net/vpuml/tutorials/soaml-multi-party-service/21-complete-sequence-diagram.png" target="_blank"></a>
+                <a class="card-image sequence-image-3" href="http://www.ibm.com/support/knowledgecenter/pt-br/SSTLXK_7.5.1/com.ibm.wbpm.wle.editor.doc/modeling/image/example_decision_gateway_1.jpg" target="_blank"></a>
+            </div>
+            <div class="col-md-3 next-steps">
+                <h2>Great step towards:</h2>
+                <ul>
+                    <li>Synthesizing user research</li>
+                    <li>Scoping project</li>
+                </ul>
+            </div>
+        </div>
         
-        <div class="card internal" id="visions" value="interviews behaviors">visions</div>
+        <!--//////////USER FLOW CARD\\\\\\\\\\-->
+        <div class="card internal dev" id="user-flow" value="interviews behaviors">
+            <div class="description col-md-9">
+                <h1>User Flow</h1>
+                <p>User flows show the sequence of actions a user would perform with your solution. This could include displaying information, user decisions, and user inputs. User flows are a great to identify what screens should be made and what to include on those screens. They also help identify potential errors before development.</p>
+             </div>
+            <div class="pictures col-md-9">
+                <h2>Examples</h2>
+                <a class="card-image user-image-1" href="https://s-media-cache-ak0.pinimg.com/564x/f0/cc/89/f0cc89756bdd487b515e4ef15e835dd9.jpg" target="_blank"></a>
+                <a class="card-image user-image-2" href="https://s-media-cache-ak0.pinimg.com/236x/23/fd/0d/23fd0d4325c6e23ccf661f9ff9c705c5.jpg" target="_blank"></a>
+                <a class="card-image user-image-3" href="http://grahamtodman.co.uk/blog/wp-content/uploads/2012/04/TimeOut-travel-app-FLOW03.jpg" target="_blank"></a>
+            </div>
+            <div class="col-md-3 next-steps">
+                <h2>Great step towards:</h2>
+                <ul>
+                    <li>Scoping project</li>
+                </ul>
+            </div>
+        </div>
         
-        <div class="card internal dev" id="user-flow" value="interviews behaviors">user flow</div>
+        <!--//////////WIREFRAMES CARD\\\\\\\\\\-->
+        <div class="card internal dev client user" id="wireframe" value="scope">
+            <div class="description col-md-9">
+                <h1>Wireframe</h1>
+                <p>Wireframes are the foundation for the content of your solution. They help organize the elements of a page to prepare your design for user feedback and development. Wireframes include placeholders for content, such as text and images, and annotations to communicate to your team and developers about how interactions will work.</p>
+             </div>
+            <div class="pictures col-md-9">
+                <h2>Examples</h2>
+                <a class="card-image wire-image-1" href="https://s-media-cache-ak0.pinimg.com/564x/67/ed/70/67ed70a6ae6785bfe56cc33d53772fb5.jpg" target="_blank"></a>
+                <a class="card-image wire-image-2" href="https://s-media-cache-ak0.pinimg.com/564x/23/b4/dd/23b4dd6c4162d5bbaad48a9fe8855d1b.jpg" target="_blank"></a>
+                <a class="card-image wire-image-3" href="https://s-media-cache-ak0.pinimg.com/564x/bc/e2/95/bce295fa48708026a7a9c241b52ea693.jpg" target="_blank"></a>
+            </div>
+            <div class="col-md-3 next-steps">
+                <h2>Great step towards:</h2>
+                <ul>
+                    <li>User feedback</li>
+                    <li>Preparing your design for development</li>
+                </ul>
+            </div>
+        </div>
         
-        <div class="card internal user" id="lo-fi" value="paintpoints scope">lo-fi prototype</div>
+        <!--//////////LO-FI PROTOTYPES CARD\\\\\\\\\\-->
+        <div class="card internal user" id="lo-fi" value="painpoints scope analysis">
+            <div class="description col-md-9">
+                <h1>Paper Prototypes</h1>
+                <p>Paper prototypes are a type of lo-fi prototype for initial user feedback on the design of your solution. Make the interactions of your solution physical before representing them digitally through hi-fi prototypes or coding. This clarifies interactions and uncovers issues with your design while they are still easy to fix.</p>
+             </div>
+            <div class="pictures col-md-9">
+                <h2>Examples</h2>
+                <a class="card-image lofi-image-1" href="https://s-media-cache-ak0.pinimg.com/564x/af/2e/4e/af2e4e2856886b5b6f4bf5c30562c2a5.jpg" target="_blank"></a>
+                <a class="card-image lofi-image-2" href="https://i.ytimg.com/vi/j2Q983tjXlk/hqdefault.jpg" target="_blank"></a>
+                <a class="card-image lofi-image-3" href="http://blog.htc.ca/wp-content/uploads/2016/02/user_experience_design_prototype.png" target="_blank"></a>
+            </div>
+            <div class="col-md-3 next-steps">
+                <h2>Great step towards:</h2>
+                <ul>
+                    <li>User feedback</li>
+                    <li>Scoping project</li>
+                    <li>Developer feedback</li>
+                </ul>
+            </div>
+        </div>
         
-        <div class="card internal dev client user" id="wireframe" value="scope">wireframe</div>
+        <!--//////////HI-FI PROTOTYPE CARD\\\\\\\\\\-->
+        <div class="card internal dev client user" id="hi-fi" value="feedback scope analysis">
+            <div class="description col-md-9">
+                <h1>High Fidelity Prototypes</h1>
+                <p>Hi-fi prototypes are final screen designs that are clickable and represent the interactions that will be possible in the full solution. They are not fully functioning in the backend, but are still essential for inviting user feedback, showcasing to clients, and illustrating design details to developers. There are many tools available for hi-fi prototype creation for mobile and web.</p>
+             </div>
+            <div class="pictures col-md-9">
+                <h2>Articles</h2>
+                <a class="card-image hifi-image-1" href="https://uxmag.com/articles/hi-fi-prototyping" target="_blank"></a>
+                <a class="card-image hifi-image-2" href="http://gohighbrow.com/creating-a-hi-fi-prototype-with-sketch-and-invision/" target="_blank"></a>
+                <a class="card-image hifi-image-3" href="https://mobgen.com/high-fidelity-prototyping/" target="_blank"></a>
+            </div>
+            <div class="col-md-3 next-steps">
+                <h2>Great step towards:</h2>
+                <ul>
+                    <li>User feedback</li>
+                    <li>Client feedback</li>
+                    <li>Developer feedback</li>
+                    <li>Preparing your design for development</li>
+                </ul>
+            </div>
+        </div>
         
-        <div class="card internal dev client user" id="hi-fi" value="feedback scope analysis">hi-fi prototype</div>
-        
-        <div class="card internal dev client user" id="iterate" value="interviews behaviors paintpoints feedback scope analysis">iterate foo</div>
+        <!--//////////ITERATE CARD\\\\\\\\\\-->
+        <div class="card internal dev client user" id="iterate" value="interviews behaviors paintpoints feedback scope analysis">
+            <div class="description col-md-9">
+                <h1>Time to Iterate!</h1>
+                <p>If you made it through your initial round of designs but still find yourself stuck, it’s time to get user feedback and iterate on your designs. There are always ways for you to better attend to your user’s needs. The number of iterations you do is largely dependent on your time and budget constraints, but it is an increasingly important part of the agile method.</p>
+             </div>
+            <div class="pictures col-md-9">
+                <h2>Articles</h2>
+                <a class="card-image iterate-image-1" href="https://designmodo.com/iterative-ux-design/" target="_blank"></a>
+                <a class="card-image iterate-image-2" href="https://www.interaction-design.org/literature/article/design-iteration-brings-powerful-results-so-do-it-again-designer" target="_blank"></a>
+                <a class="card-image iterate-image-3" href="https://www.nngroup.com/articles/iterative-design/" target="_blank"></a>
+            </div>
+            <div class="col-md-3 next-steps">
+                <h2>Great step towards:</h2>
+                <ul>
+                    <li>User feedback</li>
+                    <li>Preparing your design for development</li>
+                </ul>
+            </div>
+        </div>
     
+        <div id="by-line">
+            <p>A webtool built by Kate Carey . MHCI 2017 . Carnegie Mellon University</p>
+        </div>
+        
     </body>
 </html>
