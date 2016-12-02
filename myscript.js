@@ -4,6 +4,9 @@ var buttonState = [];
 //array of which check boxes are checked
 var checkState = [];
 
+//Array with progress buttons in order for fill() function
+var buttonArray = ['#interview-btn', '#behavior-btn', '#pain-btn', '#analysis-btn', '#scope-btn', '#feedback-btn'];
+
 //animation duration universal variable
 var animationDuration = 500;
 
@@ -25,6 +28,25 @@ var checkBox = function(event,checkBoxId){
     }
     updateView();
 };
+
+//////TODO write FUNCTION to add "filled" class to buttons up to clicked button in array\\\\\\
+var fill = function(arrPointer){
+    //set all the button classes to filter
+    $("button.filter").removeClass('filled');
+    //loop through button array up to the passed button
+    for (i=0; i<=arrPointer; i++){
+        //delay each loop until previous button animates
+        (function(i){
+           setTimeout(function(){
+               //add "filled" class to buttons up to and including that button
+               var changeBtnId = buttonArray[i];
+               $(changeBtnId).addClass('filled');
+            },700*i); 
+        })(i);
+        
+    }
+}
+
 
 //FUNCTION changes which cards are visible based on button and check states
 var updateView = function(){
@@ -65,6 +87,9 @@ var reset = function(){
     $("#client").attr('checked',false).trigger('change');
     $("#internal").attr('checked',false).trigger('change');
     $("#dev").attr('checked',false).trigger('change');
+    //reset all button classes to just "filter"
+    $("button.filter").removeClass('filled');
+    
     updateView();
 }
 

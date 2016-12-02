@@ -45,9 +45,19 @@ button.filter {
     text-align: center;
     font-weight:100;
     vertical-align: top;
-    background: #FFC15E;
+    background: linear-gradient(to left, white 50%, #FFC15E 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
     border: 2px solid #FFC15E;
     border-style: outset;
+    margin: 0px;
+}
+
+button.filter.filled {
+    background: linear-gradient(to left, white 50%, #FFC15E 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition:all 700ms linear;
 }
 
 /*checkbox styles*/
@@ -56,6 +66,14 @@ label {
     font-size: 14px; 
     text-align: left;
     font-weight:100;
+}
+
+/*counter*/
+#count {
+    padding: 13px;
+    width: 100px;
+    text-align: center;
+    margin-left: 15px;
 }
 
 /*reset button*/
@@ -72,7 +90,7 @@ button.reset {
 }
 
 #by-line {
-    float:right;
+    float: right;
     padding: 10px;
 }
 
@@ -206,7 +224,7 @@ div.card {
 }
 
 .lofi-image-3 {
-    background-image:url("http://blog.htc.ca/wp-content/uploads/2016/02/user_experience_design_prototype.png");
+    background-image:url("http://cs.wellesley.edu/~foodiere/images/testing/design2menu.JPG");
 }
 
 /*----------//HI-FI IMAGES\\----------*/   

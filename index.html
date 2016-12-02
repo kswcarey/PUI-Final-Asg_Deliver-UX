@@ -34,15 +34,15 @@
             <!--Filters section-->
             <div id="filter-bar" class="col-sm-8">
                 <!--BUTTONS Current knowledge section-->
-                <div class="row">
+                <div class="row" id="progress">
                     <h2>What do you know about your project so far?</h2>
                     <div class="row">
-                        <button class="filter" onclick="filterCard(['personas', 'journey-map','scenarios','storyboards','visions','user-flow','iterate'])">User interview or survey</button>
-                        <button class="filter" onclick="filterCard(['personas', 'journey-map','scenarios','storyboards','sequence-flow','visions','user-flow','iterate'])">User behaviors</button> 
-                        <button class="filter" onclick="filterCard(['sequence-flow','lo-fi','iterate'])">Current pain points</button>
-                        <button class="filter" onclick="filterCard(['hi-fi','iterate'])">Competitive analysis</button>
-                        <button class="filter" onclick="filterCard(['lo-fi','wireframes','iterate'])">Scope of project</button>
-                        <button class="filter" onclick="filterCard(['storyboards','lo-fi','hi-fi','iterate'])">User feedback</button>
+                        <button class="filter" id="interview-btn" onclick="filterCard(['personas', 'journey-map','scenarios','storyboards','visions','user-flow','iterate']);fill(0);">User interview or survey</button>
+                        <button class="filter" id="behavior-btn" onclick="filterCard(['personas', 'journey-map','scenarios','storyboards','sequence-flow','visions','user-flow','iterate']);fill(1);">User behaviors</button> 
+                        <button class="filter" id="pain-btn" onclick="filterCard(['sequence-flow','lo-fi','iterate']);fill(2);">Current pain points</button>
+                        <button class="filter" id="analysis-btn" onclick="filterCard(['lo-fi', 'hi-fi','iterate']);fill(3);">Competitive analysis</button>
+                        <button class="filter" id="scope-btn" onclick="filterCard(['lo-fi','wireframes','iterate']);fill(4);">Scope of project</button>
+                        <button class="filter" id="feedback-btn" onclick="filterCard(['storyboards','lo-fi','hi-fi','iterate']);fill(5);">User feedback</button>
                     </div>
                 </div>
                 <div class="row">
@@ -233,7 +233,7 @@
                 <h2>Examples</h2>
                 <a class="card-image lofi-image-1" href="https://s-media-cache-ak0.pinimg.com/564x/af/2e/4e/af2e4e2856886b5b6f4bf5c30562c2a5.jpg" target="_blank"></a>
                 <a class="card-image lofi-image-2" href="https://i.ytimg.com/vi/j2Q983tjXlk/hqdefault.jpg" target="_blank"></a>
-                <a class="card-image lofi-image-3" href="http://blog.htc.ca/wp-content/uploads/2016/02/user_experience_design_prototype.png" target="_blank"></a>
+                <a class="card-image lofi-image-3" href="http://cs.wellesley.edu/~foodiere/images/testing/design2menu.JPG" target="_blank"></a>
             </div>
             <div class="col-md-3 next-steps">
                 <h2>Great step towards:</h2>
@@ -290,7 +290,7 @@
         </div>
     
         <div id="by-line">
-            <p>A webtool built by Kate Carey . MHCI 2017 . Carnegie Mellon University</p>
+            <p>Made with ❤︎ by Kate Carey . MHCI 2017 . Carnegie Mellon University</p>
         </div>
         
     </body>
