@@ -29,7 +29,7 @@ var checkBox = function(event,checkBoxId){
     updateView();
 };
 
-//////TODO write FUNCTION to add "filled" class to buttons up to clicked button in array\\\\\\
+//FUNCTION to add "filled" class to buttons up to clicked button in array
 var fill = function(arrPointer){
     //set all the button classes to filter
     $("button.filter").removeClass('filled');

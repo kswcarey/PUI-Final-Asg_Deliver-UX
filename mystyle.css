@@ -58,6 +58,7 @@ button.filter {
     margin: 0px;
 }
 
+/*progress bar styling for filter buttons*/
 button.filter.filled {
     background: linear-gradient(to left, white 50%, #FFC15E 50%);
     background-size: 200% 100%;
@@ -95,15 +96,18 @@ button.reset {
     border-style: outset;
 }
 
+/*byline at the bottom of the pg*/
 #by-line {
     float: right;
     padding: 10px;
 }
 
+/*a little extra space after last card*/
 #iterate {
     margin-bottom: 50px;
 }
 
+/*overall card style*/
 div.card {
     margin-left: 100px;
     margin-right: 100px;
@@ -114,10 +118,12 @@ div.card {
     overflow: auto;
 }
 
+/*create two tone look for cards*/
 .description,.pictures {
     background: white;
 }
 
+/*images on cards*/
 .card-image {
     display: inline-block;
     height: 200px;
@@ -130,6 +136,7 @@ div.card {
     box-shadow: 2px 4px 6px gray;
 }
 
+/*all the image links for the cards*/
 /*----------//PERSONA IMAGES\\----------*/
 .persona-image-1 {
     background-image:url("https://s-media-cache-ak0.pinimg.com/564x/06/c5/71/06c5712a48716c82af295350680a06c1.jpg");
